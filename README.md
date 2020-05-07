@@ -1,2 +1,2 @@
 # CNN
-CNN with Classification Recycling Waste
+CNN with Recycling Waste
