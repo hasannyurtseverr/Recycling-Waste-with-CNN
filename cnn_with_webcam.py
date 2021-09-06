@@ -165,11 +165,11 @@ model = load_model('my_model.h5')
 #
 #------------------------------TEST IMAGE 
 image = cv2.imread('b_c_1.JPG') 
-testan=cv2.resize(image,(64,64))
-testan = np.expand_dims(testan, axis = 0)
-testan = (testan / 255) - 0.5
-custom = model.predict(testan)
-testban=np.argmax(custom)
+test_den_img=cv2.resize(image,(64,64))
+test_den_img = np.expand_dims(test_den_img, axis = 0)
+test_den_img = (test_den_img / 255) - 0.5
+custom = model.predict(test_den_img)
+test_den_result=np.argmax(custom)
 #-------------------------------------
 #
 #
@@ -179,20 +179,20 @@ testban=np.argmax(custom)
 #cv2.imwrite('test.JPG',image)#Kaydet
 #camera.release()# ?
 #cv2.destroyAllWindows()# Tüm ekranları kapat
-#testan=cv2.resize(image,(64,64))
-#testan = np.expand_dims(testan, axis = 0)
-#testan = (testan / 255) - 0.5
-#custom = model.predict(testan)
+#test_den_img=cv2.resize(image,(64,64))
+#test_den_img = np.expand_dims(test_den_img, axis = 0)
+#test_den_img = (test_den_img / 255) - 0.5
+#custom = model.predict(test_den_img)
 #
-#testban=np.argmax(custom)
+#test_den_result=np.argmax(custom)
 #
-#if testban == 0:
+#if test_den_result == 0:
 #    print("Atık =  CAM")
-#elif testban == 1:
+#elif test_den_result == 1:
 #    print("Atık =  KAĞIT")
-#elif testban == 2:
+#elif test_den_result == 2:
 #    print("Atık =  METAL")
-#elif testban == 3:
+#elif test_den_result == 3:
 #    print("Atık =  PLASTİK")
 #    
 #
