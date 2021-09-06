@@ -9,9 +9,9 @@ Günümüzde artan çevre kirliliği ve doğada geri dönüşüm atıklarının 
 
 Görüntü işleme yardımıyla başlıca biriktirilmek istenen geri dönüşüm atıkları (kağıt, plastik, cam, metal) tanınması istenmiş ve bunlar bir konveyör sistem üzerinde dört ayrı sınıflara ait kutulara ayıklanmak istenmiştir. 
 
-
+---
 Görüntü işleme ile geri dönüşüm atıklarının gerçek zamanlı sınıflandırılmasını sağlayan python kodları burada paylaşılmaktadır. 
-
+---
 
 
 
